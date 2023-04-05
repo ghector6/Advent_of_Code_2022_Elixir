@@ -5,6 +5,9 @@ defmodule Day1 do
 
   def list_converter(input) do
     input
+    |> String.trim()
     |> String.split("\n\n")
   end
+
+
 end
