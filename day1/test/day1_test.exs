@@ -32,6 +32,10 @@ defmodule Day1Test do
   [7000, 8000, 9000], [10000]]) == [6000, 4000, 11000, 24000, 10000]
   end
 
+  test "returns biggest number 24000" do
+    assert Day1.total([6000, 4000, 11000, 24000, 10000]) == 24000
+  end
+
 
 
 
