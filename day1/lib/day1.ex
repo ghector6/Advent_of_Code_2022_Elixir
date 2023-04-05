@@ -3,16 +3,8 @@ defmodule Day1 do
   Documentation for `Day1`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Day1.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def list_converter(input) do
+    input
+    |> String.split("\n\n")
   end
 end
