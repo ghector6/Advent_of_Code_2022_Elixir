@@ -36,7 +36,8 @@ defmodule Day1Test do
     assert Day1.total([6000, 4000, 11000, 24000, 10000]) == 24000
   end
 
-
-
-
 end
+
+
+
+
