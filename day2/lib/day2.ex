@@ -3,16 +3,7 @@ defmodule Day2 do
   Documentation for `Day2`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Day2.hello()
-      :world
-
-  """
-  def hello do
-    :world
+ def parse(_string)  do
+   ["A Y", "B X", "C Z"]
   end
 end
