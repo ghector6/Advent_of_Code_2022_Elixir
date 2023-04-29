@@ -3,12 +3,20 @@ defmodule Day1 do
   @moduledoc """
   Documentation for `Day1`.
   """
-  def  handler() do
+  def handler() do
    reader()
    |> list_converter()
    |> list_parser()
    |> list_sum()
    |> total()
+  end
+  def handler_2() do
+   reader()
+   |> list_converter()
+   |> list_parser()
+   |> list_sum()
+   |> top_carry()
+   |> Enum.sum()
   end
 
   @boo Path.expand("../input_data.txt", __DIR__)
@@ -44,5 +52,11 @@ defmodule Day1 do
    Enum.max(list)
   end
 
+  def top_carry(list) do
+    Enum.sort(list, &(&1 >= &2))
+    |> Enum.take(3)
+  end
+
 
 end
+
