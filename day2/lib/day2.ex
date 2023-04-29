@@ -3,7 +3,10 @@ defmodule Day2 do
   Documentation for `Day2`.
   """
 
- def parse(_string)  do
-   ["A Y", "B X", "C Z"]
-  end
+ def parse(string)  do
+   string
+   |> String.trim()
+   |> String.split("\n")
+   |> Enum.map(&String.trim/1)
+ end
 end
