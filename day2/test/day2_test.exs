@@ -9,4 +9,10 @@ defmodule Day2Test do
       C Z
     """) == ["A Y", "B X", "C Z"]
   end
+
+  test "returns 8, 1 and 6" do
+    assert Day2.game(["A Y", "B X", "C Z"]) == [8, 1, 6]
+  end
+
+
 end
