@@ -14,5 +14,9 @@ defmodule Day2Test do
     assert Day2.game(["A Y", "B X", "C Z"]) == [8, 1, 6]
   end
 
+  test "returns the sum of the rounds 15" do
+    assert Day2.total_pt1([8, 1, 6]) == 15
+  end
+
 
 end
