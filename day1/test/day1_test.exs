@@ -36,8 +36,14 @@ defmodule Day1Test do
     assert Day1.total([6000, 4000, 11000, 24000, 10000]) == 24000
   end
 
-end
+  test "returns top 3 carries" do
+    assert Day1.top_carry([6000, 4000, 11000, 24000, 10000]) == [24000, 11000, 10000]
+  end
 
+  test "returns sum of top three carrying" do
+    assert Enum.sum([24000, 11000, 10000]) == 45000
+  end
+end
 
 
 
