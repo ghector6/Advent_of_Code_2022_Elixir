@@ -18,4 +18,6 @@ defmodule Day2 do
     for round <- list, do:  @posibilities[round]
   end
 
+  def total_pt1(list), do: Enum.sum(list)
+
 end
