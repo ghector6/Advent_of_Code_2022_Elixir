@@ -7,6 +7,16 @@ defmodule Day2 do
     "B X" => 1, "B Y" => 5, "B Z" => 9,
     "C X" => 7, "C Y" => 2, "C Z" => 6
   }
+
+  @path Path.expand("../input_day2.txt", __DIR__)
+
+  def handler() do
+    File.read!(@path)
+    |> parse()
+    |> game()
+    |> total_pt1()
+
+  end
    def parse(string)  do
      string
      |> String.trim()
