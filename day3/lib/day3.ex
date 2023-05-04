@@ -7,7 +7,7 @@ defmodule Day3 do
     String.length(string) / 2 |> round()
   end
 
-  def list_maker(_string) do
-    ["vJrwpWtwJgWr", "hcsFMMfFFhFp"]
+  def list_maker(string) do
+    String.split_at(string, counter(string)) |> Tuple.to_list()
   end
 end
