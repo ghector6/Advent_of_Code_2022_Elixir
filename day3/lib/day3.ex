@@ -3,16 +3,7 @@ defmodule Day3 do
   Documentation for `Day3`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Day3.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def counter(string) do
+    String.length(string) / 2 |> round()
   end
 end
