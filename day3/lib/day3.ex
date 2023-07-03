@@ -64,10 +64,6 @@ defmodule Day3 do
     String.length(string) / 2 |> round()
   end
 
-  def list_maker(string) do
-    String.split_at(string, counter(string)) |> Tuple.to_list()
-  end
 end
 
-s = "vJrwpWtwJgWrhcsFMMfFFhFp\njqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\nPmmdzqPrVvPwwTWBwg\nwMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\nttgJtRGJQctTZtZT\nCrZsJsPPZsGzwwsLwLmpwMDw\n"
 #IO.inspect Day3.rearrangement2(s)
