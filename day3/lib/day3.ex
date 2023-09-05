@@ -50,7 +50,7 @@ defmodule Day3 do
   defp split_half(e) do
     half = e |> String.length() |> Kernel./(2) |> round()
     e
-    |> String.split_at(half)
+RRR |> String.split_at(half)
   end
 
   defp split_letters({h1, h2}) do
