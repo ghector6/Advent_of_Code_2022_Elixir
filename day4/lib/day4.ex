@@ -3,7 +3,7 @@ defmodule Day4 do
   Documentation for `Day4`.
   """
 
-  def contains? do
-    true
+  def pairs(input) do
+    String.split(input, ",")
   end
 end
