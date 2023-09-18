@@ -5,4 +5,8 @@ defmodule Day4Test do
   test "Test to split in the comma" do
     assert Day4.pairs("2-4,6-8") == ["2-4", "6-8"]
   end
+
+  test "Test to obtain a pairs of inner lists" do
+    assert Day4.inner_pairs(["2-4", "6-8"]) == [["2", "4"], ["6", "8"]]
+  end
 end

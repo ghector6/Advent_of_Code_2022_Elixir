@@ -6,4 +6,8 @@ defmodule Day4 do
   def pairs(input) do
     String.split(input, ",")
   end
+
+  def inner_pairs(input) do
+    Enum.map(input, fn(x) -> String.split(x, "-") end)
+  end
 end
