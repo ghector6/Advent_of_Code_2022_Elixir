@@ -14,7 +14,9 @@ defmodule Day4Test do
     assert Day4.convert_to_number([["2", "4"], ["6", "8"]]) == [[2, 4], [6, 8]]
   end
 
+
   test "Compares if 2 is <= 6 and 4 >= 8 and if so returns true" do
-    assert Day4.compare([2, 4], [6, 8]) == true
+    assert Day4.compare([2, 4], [6, 8]) == false
   end
+
 end
