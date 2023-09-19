@@ -14,4 +14,8 @@ defmodule Day4 do
   def convert_to_number(input) do
     Enum.map(input, fn(elem) -> Enum.map(elem, fn(inner) -> String.to_integer(inner) end) end)
   end
+
+  def compare(input1, input2) do
+    Enum.at(input1, 0) <= Enum.at(input2, 0) && Enum.at(input1, 1) >= Enum.at(input2, 1)
+  end
 end
