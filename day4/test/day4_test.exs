@@ -13,4 +13,8 @@ defmodule Day4Test do
   test "Test to convert each element inside the inner list into number" do
     assert Day4.convert_to_number([["2", "4"], ["6", "8"]]) == [[2, 4], [6, 8]]
   end
+
+  test "Compares if 2 is <= 6 and 4 >= 8 and if so returns true" do
+    assert Day4.compare([2, 4], [6, 8]) == true
+  end
 end
